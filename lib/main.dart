@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task_manager/pages/create_task_page.dart';
+import 'package:task_manager/pages/home_page.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: CreateTask(),
+      home: HomePage(),
     );
   }
 }

@@ -52,6 +52,7 @@ class _CreateTaskState extends State<CreateTask> {
                       labelText: "Name",
                       labelStyle: TextStyle(
                         color: Colors.white,
+                        fontSize: 12,
                       )),
                 ),
                 TextField(
@@ -64,9 +65,10 @@ class _CreateTaskState extends State<CreateTask> {
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.white),
                       ),
-                      labelText: "Data",
+                      labelText: "Date",
                       labelStyle: TextStyle(
                         color: Colors.white,
+                        fontSize: 12,
                       )),
                 ),
               ],
@@ -81,7 +83,7 @@ class _CreateTaskState extends State<CreateTask> {
             child: Container(
               color: Colors.white,
               width: MediaQuery.of(context).size.width * 1,
-              height: MediaQuery.of(context).size.height * 0.67,
+              height: MediaQuery.of(context).size.height * 0.68,
               child: Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 30,
@@ -136,13 +138,173 @@ class _CreateTaskState extends State<CreateTask> {
                         )
                       ],
                     ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Divider(
+                          thickness: 1,
+                          color: Color(0xffBFC8E8),
+                        ),
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Text(
+                          "Description",
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Color(0xffBFC8E8),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Text(
+                          "Lorem ipsum dolor sit amet, er adipiscing elit, sed dianummy nibh euismod  dolor sit amet, er adipiscing elit, sed dianummy nibh euismod sed dianummy nibh euismod dolor sit amet sed dianummy nibh euismod  dolor sit amet, er adipiscing elit, sed dianummy nibh euismod.",
+                          maxLines: 4,
+                          overflow: TextOverflow.ellipsis,
+                          softWrap: true,
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w400,
+                              fontSize: 14),
+                        ),
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Divider(
+                          thickness: 1,
+                          color: Color(0xffBFC8E8),
+                        ),
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Text(
+                          "Category",
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Color(0xffBFC8E8),
+                          ),
+                        ),
+                      ],
+                    ),
                     const SizedBox(
                       height: 12,
                     ),
-                    const Divider(
-                      thickness: 1,
-                      color: Color(0xffBFC8E8),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(30),
+                          child: Container(
+                            height: 50,
+                            width: MediaQuery.of(context).size.width * 0.25,
+                            color: const Color(0xff9C2CF3),
+                            child: const Center(
+                              child: Text(
+                                "Design",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ),
+                        ),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(30),
+                          child: Container(
+                            height: 50,
+                            width: MediaQuery.of(context).size.width * 0.25,
+                            color: const Color(0xffE5EAFC),
+                            child: const Center(
+                              child: Text(
+                                "Meeting",
+                                style: TextStyle(color: Color(0xff2E3A59)),
+                              ),
+                            ),
+                          ),
+                        ),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(30),
+                          child: Container(
+                            height: 50,
+                            width: MediaQuery.of(context).size.width * 0.25,
+                            color: const Color(0xffE5EAFC),
+                            child: const Center(
+                              child: Text(
+                                "Coding",
+                                style: TextStyle(color: Color(0xff2E3A59)),
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
                     ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(30),
+                          child: Container(
+                            height: 50,
+                            width: MediaQuery.of(context).size.width * 0.25,
+                            color: const Color(0xffE5EAFC),
+                            child: const Center(
+                              child: Text(
+                                "BDE",
+                                style: TextStyle(color: Color(0xff2E3A59)),
+                              ),
+                            ),
+                          ),
+                        ),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(30),
+                          child: Container(
+                            height: 50,
+                            width: MediaQuery.of(context).size.width * 0.25,
+                            color: const Color(0xffE5EAFC),
+                            child: const Center(
+                              child: Text(
+                                "Testing",
+                                style: TextStyle(color: Color(0xff2E3A59)),
+                              ),
+                            ),
+                          ),
+                        ),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(30),
+                          child: Container(
+                            height: 50,
+                            width: MediaQuery.of(context).size.width * 0.25,
+                            color: const Color(0xffE5EAFC),
+                            child: const Center(
+                              child: Text(
+                                "Quick call",
+                                style: TextStyle(color: Color(0xff2E3A59)),
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(30),
+                      child: Container(
+                        height: 60,
+                        width: double.infinity,
+                        color: const Color(0xff9C2CF3),
+                        child: const Center(
+                          child: Text(
+                            "Create Task",
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          ),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),

@@ -11,7 +11,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffE5E5E5),
+      backgroundColor: const Color(0xffF2F5FF),
       body: SafeArea(
         child: ListView(
           children: [
@@ -117,38 +117,67 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: 30,
-                vertical: 20,
+                vertical: 12,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
                     "Progress",
-                    style: TextStyle(color: Color(0xff2E3A59), fontSize: 24),
+                    style: TextStyle(color: Color(0xff2E3A59), fontSize: 20),
                   ),
                   const SizedBox(
-                    height: 20,
+                    height: 15,
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(20),
                     child: Container(
-                        height: 100,
+                        height: 75,
                         width: double.infinity,
                         color: Colors.white,
                         child: Center(
                           child: ListTile(
-                              leading: ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
-                            child: Container(
-                                height: 40,
-                                color: Color(0xff9C2CF3),
-                                child: Image.asset(
-                                  "assets/list.png",
-                                  height: 20,
-                                )),
-                          )),
+                            leading: Image.asset(
+                              "assets/task.png",
+                              height: 45,
+                            ),
+                            title: const Text(
+                              "Design Changes",
+                              style: TextStyle(fontWeight: FontWeight.w500),
+                            ),
+                            subtitle: Text("2 Days ago"),
+                            trailing: IconButton(
+                                onPressed: () {},
+                                icon: const Icon(Icons.more_vert_outlined)),
+                          ),
                         )),
-                  )
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                    child: Container(
+                        height: 75,
+                        width: double.infinity,
+                        color: Colors.white,
+                        child: Center(
+                          child: ListTile(
+                            leading: Image.asset(
+                              "assets/task.png",
+                              height: 45,
+                            ),
+                            title: const Text(
+                              "Design Changes",
+                              style: TextStyle(fontWeight: FontWeight.w500),
+                            ),
+                            subtitle: Text("2 Days ago"),
+                            trailing: IconButton(
+                                onPressed: () {},
+                                icon: const Icon(Icons.more_vert_outlined)),
+                          ),
+                        )),
+                  ),
                 ],
               ),
             ),

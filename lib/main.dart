@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task_manager/pages/home_page.dart';
+import 'package:task_manager/route_generator.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -15,8 +15,11 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
+    return MaterialApp(
+      title: 'Task Manager',
+      theme: ThemeData(primaryColor: Color(0xffF2F5FF)),
+      initialRoute: '/',
+      onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
 }

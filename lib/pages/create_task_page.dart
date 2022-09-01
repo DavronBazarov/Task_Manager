@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CreateTask extends StatefulWidget {
-  const CreateTask({Key? key}) : super(key: key);
+  final String data;
+  const CreateTask({Key? key, required this.data}) : super(key: key);
 
   @override
   State<CreateTask> createState() => _CreateTaskState();

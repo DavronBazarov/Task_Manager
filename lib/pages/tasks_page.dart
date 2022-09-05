@@ -219,4 +219,29 @@ class _TasksPageState extends State<TasksPage> {
       ),
     );
   }
+  Widget buildTasks(){
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Container(
+          height: 75,
+          width: double.infinity,
+          color: Colors.white,
+          child: Center(
+            child: ListTile(
+              leading: Image.asset(
+                "assets/task.png",
+                height: 45,
+              ),
+              title: const Text(
+                "Design Changes",
+                style: TextStyle(fontWeight: FontWeight.w500),
+              ),
+              subtitle: Text("2 Days ago"),
+              trailing: IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.more_vert_outlined)),
+            ),
+          )),
+    );
+  }
 }

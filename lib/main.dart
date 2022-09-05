@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Task Manager',
-      theme: ThemeData(primaryColor: Color(0xffF2F5FF)),
+      theme: ThemeData(primaryColor: const Color(0xffF2F5FF)),
       initialRoute: '/',
       onGenerateRoute: RouteGenerator.generateRoute,
     );

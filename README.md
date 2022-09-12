@@ -4,6 +4,8 @@ A new Flutter project.
 
 ## Getting Started
 
+![Screen_Recording_20220912-195300 (2)](https://user-images.githubusercontent.com/104300528/189702429-aa5c1007-3437-45ca-82cd-c84c9a2e7338.gif)
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
